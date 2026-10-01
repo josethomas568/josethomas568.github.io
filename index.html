@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="color-scheme:dark">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- ============================================================ -->
-<!-- EDIT ME: your name + headline title                          -->
-<!-- ============================================================ -->
 <title>Jose Thomas — Data Scientist & ML Engineer</title>
-<meta name="description" content="Portfolio of Jose Thomas — Data Scientist and Machine Learning / AI Engineer. Featuring live, in-browser ML demos: a neural network you train yourself, a handwritten-digit classifier, and a language detector." />
+<meta name="description" content="Jose Thomas — Dallas-based data scientist and ML engineer (M.S. Statistics &amp; Data Science, UT Dallas). Project case studies plus live in-browser ML demos: a neural network you train yourself, a handwritten-digit classifier, and a language detector." />
 <meta name="author" content="Jose Thomas" />
 <meta name="theme-color" content="#070a10" />
-<!-- ===== EDIT ME: replace the URL with your live site once deployed ===== -->
 <meta property="og:type" content="website" />
+<link rel="canonical" href="https://josethomas568.github.io/" />
 <meta property="og:title" content="Jose Thomas — Data Scientist & ML Engineer" />
 <meta property="og:description" content="Live, in-browser ML demos: train a neural net, a handwritten-digit classifier, and a language detector — all running client-side." />
-<meta property="og:url" content="https://yourusername.github.io/portfolio/" />
-<meta property="og:image" content="https://yourusername.github.io/portfolio/assets/og-image.png" />
+<meta property="og:url" content="https://josethomas568.github.io/" />
+<meta property="og:image" content="https://josethomas568.github.io/assets/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Jose Thomas — Data Scientist & ML Engineer" />
 <meta name="twitter:description" content="Live, in-browser ML demos running entirely client-side." />
-<meta name="twitter:image" content="https://yourusername.github.io/portfolio/assets/og-image.png" />
+<meta name="twitter:image" content="https://josethomas568.github.io/assets/og-image.png" />
 <!-- inline SVG favicon (keeps the page single-file; works offline) -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070a10'/%3E%3Cg stroke='%2334d399' stroke-width='2' opacity='.8'%3E%3Cline x1='16' y1='20' x2='32' y2='14'/%3E%3Cline x1='16' y1='20' x2='32' y2='32'/%3E%3Cline x1='16' y1='44' x2='32' y2='32'/%3E%3Cline x1='16' y1='44' x2='32' y2='50'/%3E%3Cline x1='32' y1='14' x2='48' y2='32'/%3E%3Cline x1='32' y1='32' x2='48' y2='32'/%3E%3Cline x1='32' y1='50' x2='48' y2='32'/%3E%3C/g%3E%3Cg fill='%2360a5fa'%3E%3Ccircle cx='16' cy='20' r='4'/%3E%3Ccircle cx='16' cy='44' r='4'/%3E%3Ccircle cx='32' cy='14' r='4'/%3E%3Ccircle cx='32' cy='32' r='4'/%3E%3Ccircle cx='32' cy='50' r='4'/%3E%3C/g%3E%3Ccircle cx='48' cy='32' r='5' fill='%2334d399'/%3E%3C/svg%3E" />
-<!-- Type system: Space Grotesk (display) + Inter (body) + JetBrains Mono (data/UI) -->
+<!-- Type system: Geist (display + body) + Geist Mono (data/UI) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   /* ==========================================================================
      DESIGN SYSTEM — techy neon / glass, dark
@@ -34,12 +31,12 @@
     /* base palette (original, preserved) */
     --bg:#070a10; --bg-soft:#0d121c; --bg-card:#111826; --border:#1e2738;
     --text:#dde4ef; --text-dim:#8a96ab;
-    --accent:#34d399; --accent-2:#60a5fa; --accent-3:#a78bfa;
-    --accent-rgb:52,211,153; --accent2-rgb:96,165,250; --accent3-rgb:167,139,250;
+    --accent:#3ccf9a; --accent-2:#a9b6c8; --accent-3:#3ccf9a;
+    --accent-rgb:60,207,154; --accent2-rgb:169,182,200; --accent3-rgb:60,207,154;
 
     /* color roles */
-    --grad-accent:linear-gradient(120deg,var(--accent),var(--accent-2) 55%,var(--accent-3));
-    --grad-bar:linear-gradient(90deg,var(--accent-2),var(--accent));
+    --grad-accent:var(--accent);
+    --grad-bar:var(--accent);
     --ink-on-accent:#03170f;
 
     /* glass tokens */
@@ -72,9 +69,9 @@
     --fs-2xl:clamp(1.8rem,1.45rem + 1.8vw,2.7rem);
     --fs-hero:clamp(2.5rem,1.7rem + 4.6vw,4.6rem);
 
-    --mono:"JetBrains Mono","SF Mono","Fira Code",ui-monospace,Menlo,Consolas,monospace;
-    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    --display:"Space Grotesk",var(--sans);
+    --mono:"Geist Mono","SF Mono",ui-monospace,Menlo,Consolas,monospace;
+    --sans:"Geist",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    --display:var(--sans);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -515,15 +512,96 @@
       backdrop-filter:blur(8px) saturate(1.15)!important;-webkit-backdrop-filter:blur(8px) saturate(1.15)!important;}
   }
 
+  /* ==========================================================================
+     RESTYLE LAYER — calmer, single-accent finish (applied after the base system)
+     ========================================================================== */
+  /* no neon: remove glow text-shadows / drop-shadows across the page */
+  .eyebrow,.play-controls h3,.range-val,.stat .v,.metric .mv,.case-links a:hover,.pred-big,.bar-row.top .digit,
+  .lang-name,.xg-stats .big,.fb-ctrl .rv,.score-summary .ml,.wc-feats li::before{text-shadow:none;}
+  .eyebrow::before{box-shadow:none;background:var(--accent);}
+  .logo{background:none;color:var(--text);filter:none;}
+  .logo span span{color:var(--accent);}
+  .lang-flag{filter:none;}
+  .scroll-progress span{box-shadow:none;}
+  .bar-fill,.wc-w .fill{box-shadow:none;}
+  .heat .hc.top{box-shadow:none;}
+  .xp-item::before{box-shadow:0 0 0 4px var(--bg);}
+  .xp-timeline::before{background:linear-gradient(180deg,var(--glass-line-strong),transparent);}
+  input[type=range]::-webkit-slider-runnable-track{background:rgba(var(--accent-rgb),.55);}
+  input[type=range]::-moz-range-track{background:rgba(var(--accent-rgb),.55);}
+  input[type=range]::-webkit-slider-thumb,input[type=range]::-moz-range-thumb{box-shadow:none;}
+
+  /* solid accent buttons instead of teal→blue gradients */
+  .btn.primary,.seg button.active,.wc-badge{background:var(--accent);box-shadow:none;}
+  .btn.primary:hover{background:#56dcab;box-shadow:0 8px 24px -10px rgba(var(--accent-rgb),.6);}
+  .btn.ghost:hover{box-shadow:none;}
+  .tile:hover,.case:hover,.case.open,.contact-row a:hover{box-shadow:var(--glass-hi),var(--shadow-1);}
+  .wc-card{background:var(--glass-fill);border-color:var(--glass-line-strong);box-shadow:var(--glass-hi),var(--shadow-1);}
+  .tag,.wc-tags .tag{color:var(--text-dim);background:rgba(146,180,255,.05);border-color:var(--well-line);}
+  .xp-org{color:var(--text);}
+
+  /* quieter backdrop: one ambient glow, softer grid */
+  .mesh{opacity:.35;}
+  .mesh.m2,.mesh.m3{display:none;}
+  .mesh-grid{opacity:.6;}
+  #netCanvas{opacity:.35;}
+
+  /* typography polish */
+  h1,h2,h3{text-wrap:balance;}
+  p,.lead,li{text-wrap:pretty;}
+  h2{font-weight:600;letter-spacing:-.03em;}
+  .stat .v,.metric .mv,.pred-big,.xg-stats .big,.score-summary .ml,.bar-row .pct,.wdl-row .pct,.range-val,.rv,.pct,.heat .hc,.proof .v{font-variant-numeric:tabular-nums;}
+  section[id],header[id]{scroll-margin-top:72px;}
+  .eyebrow{text-transform:none;letter-spacing:.02em;font-size:var(--fs-sm);}
+
+  /* HERO — type-led, no glass card */
+  .hero{min-height:auto;padding:clamp(96px,14vh,160px) 0 clamp(72px,10vh,120px);}
+  .hero-card{max-width:860px;padding:0;background:none;border:0;box-shadow:none;
+    -webkit-backdrop-filter:none;backdrop-filter:none;}
+  .hero-card::before{display:none;}
+  .hero .status{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:var(--mono);
+    font-size:var(--fs-xs);color:var(--text-dim);margin-bottom:28px;}
+  .hero .status .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;margin-right:8px;vertical-align:1px;}
+  .hero .status .open{color:var(--text);}
+  .hero .status>span+span::before{content:"·";margin-right:14px;color:var(--glass-line-strong);}
+  .hero h1{font-size:clamp(2.6rem,1.6rem + 5vw,5.4rem);line-height:.98;letter-spacing:-.045em;font-weight:600;margin-bottom:24px;}
+  .hero h1 .line2{display:block;color:var(--text-dim);font-weight:500;font-size:.56em;line-height:1.12;letter-spacing:-.035em;margin-top:.22em;max-width:20ch;}
+  .hero p{max-width:58ch;}
+  .cta{align-items:center;gap:22px;}
+  .text-link{color:var(--text);font-weight:500;font-size:var(--fs-sm);border-bottom:1px solid var(--glass-line-strong);
+    padding-bottom:2px;transition:color .2s,border-color .2s;}
+  .text-link:hover{color:var(--accent);border-color:var(--accent);}
+  .proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-3);margin-top:clamp(48px,8vh,80px);
+    padding-top:var(--s-3);border-top:1px solid var(--glass-line);max-width:860px;}
+  .proof>div{display:flex;flex-direction:column-reverse;}
+  .proof .v{font-family:var(--mono);font-size:var(--fs-xl);color:var(--text);letter-spacing:-.02em;}
+  .proof .k{font-size:var(--fs-sm);color:var(--text-dim);line-height:1.45;margin-top:4px;}
+  @media(max-width:640px){
+    .proof{grid-template-columns:1fr;gap:var(--s-2);}
+    .cta .btn{flex:0 0 auto;}
+  }
+
+  /* CONTACT — direct email instead of a form */
+  .contact-main{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s-2) var(--s-3);margin-top:var(--s-3);}
+  .contact-main .email{font-family:var(--mono);font-size:clamp(1.05rem,.9rem + 1vw,1.5rem);color:var(--text);
+    border-bottom:1px solid var(--glass-line-strong);padding-bottom:4px;word-break:break-all;transition:color .2s,border-color .2s;}
+  .contact-main .email:hover{color:var(--accent);border-color:var(--accent);}
+  .contact-row{margin-top:var(--s-3);}
+  .contact-row a{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(146,180,255,.04);padding:12px 18px;font-size:var(--fs-sm);}
+
+  /* nav: shorter list fits on phones */
+  .logo{font-size:.95rem;}
+  .lg-short{display:none;}
+  @media(max-width:480px){.nav-links a{padding:6px 8px;font-size:.78rem;}.lg-full{display:none;}.lg-short{display:inline;}}
+
+  @media (prefers-reduced-motion:reduce){
+    #netCanvas{display:none;}
+  }
 </style>
-<!-- EDIT ME — privacy-friendly analytics. After you deploy, uncomment and set data-domain to your live URL.
-     (Plausible shown; plausible.io is free-trial/paid. For a free option use Cloudflare Web Analytics or GoatCounter.)
-<script defer data-domain="your-domain.com" src="https://plausible.io/js/script.js"></script>
--->
 </head>
 <body>
 
-<a class="skip-link" href="#playground">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- decorative backdrop: animated gradient mesh + grid + film grain -->
 <div class="backdrop" aria-hidden="true">
@@ -538,15 +616,12 @@
 <!-- ============ NAV ============ -->
 <nav aria-label="Primary">
   <div class="wrap nav-inner">
-    <a href="#top" class="logo">josethomas</a>
+    <a href="#top" class="logo" aria-label="Jose Thomas — back to top"><span class="lg-full">jose<span>thomas</span></span><span class="lg-short" aria-hidden="true">j<span>t</span></span></a>
     <div class="nav-links">
-      <a href="#playground">Live Demo</a>
-      <a href="#digits">Digit AI</a>
-      <a href="#lang">Language AI</a>
-      <a href="#football">Football</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
       <a href="#work">Work</a>
+      <a href="#playground">Demos</a>
+      <a href="#about">About</a>
+      <a href="#football">Football</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -557,24 +632,139 @@
   <canvas id="netCanvas" aria-hidden="true"></canvas>
   <div class="wrap">
     <div class="hero-card">
-      <span class="badge"><span class="pulse"></span>Open to ML / AI Engineer roles</span>
-      <!-- EDIT ME: name + one-liner -->
-      <h1>Jose Thomas.<br /><span class="grad">I teach machines to learn.</span></h1>
-      <p>Data Scientist &amp; ML/AI Engineer with an MS in Statistics &amp; Data Science from UT&nbsp;Dallas.
-         I build end-to-end ML systems — from modeling to cloud deployment — across tabular ML,
-         computer vision, LLM agents, and streaming data.</p>
+      <div class="status"><span><span class="dot" aria-hidden="true"></span><span class="open">Open to ML / AI engineering roles</span></span><span>Dallas, TX</span><span>M.S. Statistics &amp; Data Science, UT&nbsp;Dallas</span></div>
+      <h1>Jose Thomas <span class="line2">builds ML systems that make it past the notebook.</span></h1>
+      <p>Data scientist and ML engineer. I take models from raw data to a deployed service — leakage-proof
+         features, honest evaluation, and reliable serving — across tabular ML, computer vision,
+         LLM agents, and streaming data.</p>
       <div class="cta">
-        <a class="btn primary" href="#playground">▶ Try a live neural net</a>
-        <a class="btn ghost" href="#work">See my work</a>
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="text-link" href="#playground">Or train a neural net in your browser &rarr;</a>
       </div>
     </div>
+    <dl class="proof" aria-label="Selected results">
+      <div><dt class="k">Lower RMSE on 500k+ auction sales by reframing the target</dt><dd class="v">74.5%</dd></div>
+      <div><dt class="k">Validation accuracy on noisy salvage-vehicle photos, 8 classes</dt><dd class="v">88.7%</dd></div>
+      <div><dt class="k">Streaming windows with exactly-once dedup, served from Redis</dt><dd class="v">30&nbsp;s</dd></div>
+    </dl>
   </div>
 </header>
+
+<main id="main">
+
+<!-- ============ WORK / CASE STUDIES ============ -->
+<section id="work">
+  <div class="wrap reveal">
+    <div class="eyebrow">Selected Work</div>
+    <h2>Project case studies</h2>
+    <p class="lead">Click any project to expand the full case study. Everything here lives on my <a href="https://github.com/josethomas568" target="_blank" rel="noopener" style="color:var(--accent)">GitHub</a>.</p>
+    <div class="cases" id="cases">
+
+      <div class="case open">
+        <div class="case-head" role="button" tabindex="0" aria-expanded="true">
+          <div>
+            <h3>Vehicle Auction Price Prediction Engine</h3>
+            <div class="sub">XGBoost residual-delta model · serverless REST API on GCP</div>
+          </div>
+          <span class="case-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="case-body"><div class="case-inner">
+          <figure class="case-diagram"><svg viewBox="0 0 1208 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="architecture diagram"><defs><marker id="pf-ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8a96ab"/></marker></defs><rect x="8" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="89" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">500k+ records</text><line x1="175" y1="47" x2="207" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="214" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="295" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">89 features</text><line x1="381" y1="47" x2="413" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="420" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="501" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">y = Price − MMR</text><line x1="587" y1="47" x2="619" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="626" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="707" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">XGBoost</text><line x1="793" y1="47" x2="825" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="832" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="913" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">+ MMR back</text><line x1="999" y1="47" x2="1031" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="1038" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="1119" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Cloud Run API</text></svg><figcaption>Residual-delta modeling — predict the markup vs. market, then add MMR back. Served as a serverless API on GCP.</figcaption></figure>
+          <div class="row"><div class="k">Problem</div><div class="vv">At wholesale auctions the base valuation (Manheim Market Report) tracks the final price almost 1:1, so models lazily split on it — target leakage — and never learn how the actual vehicle traits drive the bid.</div></div>
+          <div class="row"><div class="k">Approach</div><div class="vv">Reframed the target as the markup/discount versus market (Selling Price − MMR), forcing 89 engineered features to explain price. Trained an XGBoost regressor on 500k+ records, then containerized it and shipped a serverless REST API on Google Cloud Run.</div></div>
+          <div class="row"><div class="k">Results</div>
+            <div class="metrics">
+              <div class="metric"><div class="mv">74.5%</div><div class="mk">RMSE improvement</div></div>
+              <div class="metric"><div class="mv">$1,475</div><div class="mk">final RMSE</div></div>
+              <div class="metric"><div class="mv">500k+</div><div class="mk">records</div></div>
+            </div>
+          </div>
+          <div class="tags"><span class="tag">XGBoost</span><span class="tag">Google Cloud Run</span><span class="tag">Docker</span><span class="tag">Flask</span></div>
+          <div class="case-links"><a href="https://github.com/josethomas568/Vehicle-Auction-Price-Prediction-Engine" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div></div>
+      </div>
+
+      <div class="case">
+        <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+          <div>
+            <h3>DS Architect — Automated Data-Science Platform</h3>
+            <div class="sub">An LLM agent that runs EDA → modeling → reporting</div>
+          </div>
+          <span class="case-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="case-body"><div class="case-inner">
+          <figure class="case-diagram"><svg viewBox="0 0 1002 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="architecture diagram"><defs><marker id="pf-ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8a96ab"/></marker></defs><rect x="8" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="89" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Upload data</text><line x1="175" y1="47" x2="207" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="214" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="295" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Claude agent</text><line x1="381" y1="47" x2="413" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="420" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="501" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">EDA → Model</text><line x1="587" y1="47" x2="619" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="626" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="707" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Report → Export</text><line x1="793" y1="47" x2="825" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="832" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="913" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Streamlit UI</text></svg><figcaption>An LLM agent writes and runs Python across a guided five-phase workflow, from EDA to an exported report.</figcaption></figure>
+          <div class="row"><div class="k">Problem</div><div class="vv">Taking a raw dataset to a trained model and a shareable report means the same repetitive loop every time — EDA, cleaning, feature engineering, modeling, and write-up.</div></div>
+          <div class="row"><div class="k">Approach</div><div class="vv">Built a conversational platform (Streamlit + FastAPI) where an Anthropic Claude agent with tool use writes and executes Python against your data through a guided five-phase workflow — from EDA to a baseline → Random Forest → XGBoost comparison to an auto-generated report. Code runs in sandboxed subprocesses.</div></div>
+          <div class="row"><div class="k">Highlights</div>
+            <div class="metrics">
+              <div class="metric"><div class="mv">5-phase</div><div class="mk">agent workflow</div></div>
+              <div class="metric"><div class="mv">Tool-use</div><div class="mk">Claude executes code</div></div>
+              <div class="metric"><div class="mv">Docker</div><div class="mk">one-command deploy</div></div>
+            </div>
+          </div>
+          <div class="tags"><span class="tag">Anthropic Claude</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">XGBoost</span><span class="tag">Docker</span></div>
+          <div class="case-links"><a href="https://github.com/josethomas568/automl-analyst" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div></div>
+      </div>
+
+      <div class="case">
+        <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+          <div>
+            <h3>Vehicle Damage Classification (CNN)</h3>
+            <div class="sub">Transfer learning with EfficientNetB0 · 8 damage classes</div>
+          </div>
+          <span class="case-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="case-body"><div class="case-inner">
+          <figure class="case-diagram"><svg viewBox="0 0 1002 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="architecture diagram"><defs><marker id="pf-ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8a96ab"/></marker></defs><rect x="8" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="89" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Salvage photos</text><line x1="175" y1="47" x2="207" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="214" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="295" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Augment</text><line x1="381" y1="47" x2="413" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="420" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="501" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">EfficientNetB0</text><line x1="587" y1="47" x2="619" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="626" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="707" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Fine-tuned head</text><line x1="793" y1="47" x2="825" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="832" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="913" y="43" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">8 classes ·</text><text x="913" y="58" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">88.7%</text></svg><figcaption>Transfer learning — a frozen ImageNet backbone plus a fine-tuned head, with augmentation for real-world robustness.</figcaption></figure>
+          <div class="row"><div class="k">Problem</div><div class="vv">Real salvage photos are noisy — unpredictable angles, poor lighting, and heavy class imbalance — so CNNs trained from scratch overfit to the background instead of the damage.</div></div>
+          <div class="row"><div class="k">Approach</div><div class="vv">Used transfer learning on a frozen EfficientNetB0 (ImageNet) with fine-tuned top layers for 8 damage classes, plus dynamic augmentation (rotation, shifting, zoom, flips). Early stopping and checkpointing captured the peak weights.</div></div>
+          <div class="row"><div class="k">Results</div>
+            <div class="metrics">
+              <div class="metric"><div class="mv">88.7%</div><div class="mk">validation accuracy</div></div>
+              <div class="metric"><div class="mv">8</div><div class="mk">damage classes</div></div>
+              <div class="metric"><div class="mv">EfficientNetB0</div><div class="mk">transfer learning</div></div>
+            </div>
+          </div>
+          <div class="tags"><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">EfficientNet</span><span class="tag">Computer Vision</span></div>
+          <div class="case-links"><a href="https://github.com/josethomas568/Salvage-Vehicle-Damage-Classification-CNN-" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div></div>
+      </div>
+
+      <div class="case">
+        <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+          <div>
+            <h3>Live Ride-Share Surge-Pricing Engine</h3>
+            <div class="sub">Streaming pipeline: Redpanda → PySpark → Redis</div>
+          </div>
+          <span class="case-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="case-body"><div class="case-inner">
+          <figure class="case-diagram"><svg viewBox="0 0 1002 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="architecture diagram"><defs><marker id="pf-ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8a96ab"/></marker></defs><rect x="8" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="89" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Async generator</text><line x1="175" y1="47" x2="207" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="214" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="295" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Redpanda</text><line x1="381" y1="47" x2="413" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="420" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="501" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">PySpark 30s win</text><line x1="587" y1="47" x2="619" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="626" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="707" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Redis sub-ms</text><line x1="793" y1="47" x2="825" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="832" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="913" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Grafana</text></svg><figcaption>Event-time streaming with a one-minute watermark, exactly-once dedup, and sub-millisecond Redis lookups.</figcaption></figure>
+          <div class="row"><div class="k">Problem</div><div class="vv">Surge pricing needs live supply/demand per zone from a messy event firehose — late events, duplicates, and GPS dropouts — without ever crashing the pipeline.</div></div>
+          <div class="row"><div class="k">Approach</div><div class="vv">Built a four-stage streaming system: an async event generator → Redpanda (Kafka) → PySpark Structured Streaming with 30-second tumbling windows, a one-minute watermark and exactly-once dedup → Redis for sub-millisecond lookups. Prometheus + Grafana dashboards and a documented fault-tolerance recovery story round it out.</div></div>
+          <div class="row"><div class="k">Highlights</div>
+            <div class="metrics">
+              <div class="metric"><div class="mv">30s</div><div class="mk">tumbling windows</div></div>
+              <div class="metric"><div class="mv">Exactly-once</div><div class="mk">dedup + recovery</div></div>
+              <div class="metric"><div class="mv">sub-ms</div><div class="mk">Redis lookups</div></div>
+            </div>
+          </div>
+          <div class="tags"><span class="tag">PySpark</span><span class="tag">Kafka / Redpanda</span><span class="tag">Redis</span><span class="tag">Grafana</span><span class="tag">Docker</span></div>
+          <div class="case-links"><a href="https://github.com/josethomas568/Live-Ride-Share-Surge-Pricing-Engine" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- ============ PLAYGROUND (SIGNATURE) ============ -->
 <section id="playground">
   <div class="wrap reveal">
-    <div class="eyebrow">Interactive — built from scratch</div>
+    <div class="eyebrow">Live demos · built from scratch</div>
     <h2>Train a neural network in your browser</h2>
     <p class="lead">No libraries, no server — this is a multi-layer perceptron I implemented in pure
        JavaScript: forward pass, backpropagation, and gradient descent. Pick a dataset, set the
@@ -586,8 +776,8 @@
       <div class="play-controls">
         <h3>// controls</h3>
         <div class="ctrl">
-          <label>Dataset</label>
-          <div class="seg" id="datasetSeg">
+          <label id="dsLbl">Dataset</label>
+          <div class="seg" id="datasetSeg" role="group" aria-labelledby="dsLbl">
             <button data-ds="spiral" class="active">Spiral</button>
             <button data-ds="circles">Circles</button>
             <button data-ds="moons">Moons</button>
@@ -595,15 +785,15 @@
           </div>
         </div>
         <div class="ctrl">
-          <label>Architecture <span class="range-val" id="archVal">2·16·16·1</span></label>
-          <div class="seg" id="archSeg">
+          <label id="archLbl">Architecture <span class="range-val" id="archVal">2·16·16·1</span></label>
+          <div class="seg" id="archSeg" role="group" aria-labelledby="archLbl">
             <button data-arch="8,8" class="active">2·8·8·1</button>
             <button data-arch="16,16">2·16·16·1</button>
             <button data-arch="16,16,16">deep</button>
           </div>
         </div>
         <div class="ctrl">
-          <label>Learning rate <span class="range-val" id="lrVal">0.05</span></label>
+          <label for="lr">Learning rate <span class="range-val" id="lrVal">0.05</span></label>
           <input type="range" id="lr" min="1" max="100" value="50" />
         </div>
         <div class="play-actions">
@@ -649,12 +839,11 @@
       <div class="pred-card">
         <div class="pred-head">
           <div class="pred-big" id="predBig">–</div>
-          <div class="pred-conf" id="predConf">Draw a digit to begin</div>
+          <div class="pred-conf" id="predConf" aria-live="polite">Draw a digit to begin</div>
         </div>
         <div class="bars" id="bars"></div>
-        <p class="digit-note">Tip: draw <code>large and centered</code>. Trained on a synthetic,
-           heavily augmented font dataset (the sandbox couldn't reach the real MNIST files), so it's
-           sharpest on clearly drawn digits.</p>
+        <p class="digit-note">Tip: draw <code>large and centered</code>. Trained on synthetic, heavily augmented digit
+           renderings rather than handwritten MNIST, so it's sharpest on clearly drawn digits.</p>
       </div>
     </div>
   </div>
@@ -670,12 +859,12 @@
        classifier I trained on six languages, then quantized and embedded here. Type or paste a
        sentence and it identifies the language as you type, entirely in your browser.</p>
     <div class="lang-card">
-      <textarea id="langInput" spellcheck="false" placeholder="Type a sentence in any supported language...">La inteligencia artificial está cambiando el mundo.</textarea>
+      <textarea id="langInput" spellcheck="false" aria-label="Text to classify by language" placeholder="Type a sentence in any supported language…">La inteligencia artificial está cambiando el mundo.</textarea>
       <div class="lang-head">
         <span class="lang-flag" id="langFlag">🌐</span>
         <div>
           <div class="lang-name" id="langName">—</div>
-          <div class="lang-conf" id="langConf">Start typing to detect</div>
+          <div class="lang-conf" id="langConf" aria-live="polite">Start typing to detect</div>
         </div>
       </div>
       <div class="bars" id="langBars"></div>
@@ -740,145 +929,31 @@
   <div class="wrap reveal">
     <div class="eyebrow">Experience &amp; Education</div>
     <h2>Education &amp; experience</h2>
-    <p class="lead">The short version. <!-- EDIT ME: link your resume PDF --><a href="#" target="_blank" rel="noopener" style="color:var(--accent)">Download my r&eacute;sum&eacute; (PDF) &#8599;</a></p>
+    <p class="lead">The short version.</p>
     <div class="xp-timeline">
       <div class="xp-item">
         <div class="xp-role">M.S. in Statistics &amp; Data Science</div>
         <div class="xp-org">The University of Texas at Dallas</div>
-        <div class="xp-meta"><!-- EDIT ME: add your years, e.g. 2024 &mdash; 2026 -->Richardson, TX</div>
+        <div class="xp-meta">Graduated May 2026 &middot; Richardson, TX</div>
         <ul>
           <li>Graduate coursework across machine learning, statistical modeling, and data engineering.</li>
-          <li><!-- EDIT ME: add honors / GPA / a standout course or capstone -->Applied ML across tabular, vision, NLP, and streaming projects (see selected work below).</li>
+          <li>Applied ML across tabular, vision, NLP, and streaming projects (see selected work below).</li>
         </ul>
       </div>
-      <!-- EDIT ME: add real internships / roles by copying the block below and filling it in.
       <div class="xp-item">
-        <div class="xp-role">Data Science Intern</div>
-        <div class="xp-org">Company Name</div>
-        <div class="xp-meta">2025 &mdash; 2025 &middot; City, ST</div>
-        <ul>
-          <li>What you built and the measurable impact (add a metric if you have one).</li>
-        </ul>
+        <div class="xp-role">B.Sc. in Mathematics</div>
+        <div class="xp-org">St. Berchmans College</div>
+        <div class="xp-meta">Graduated 2023 &middot; Kottayam, India</div>
       </div>
-      -->
     </div>
   </div>
 </section>
-
-<!-- ============ WORK / CASE STUDIES ============ -->
-<section id="work">
-  <div class="wrap reveal">
-    <div class="eyebrow">Selected Work</div>
-    <h2>Project case studies</h2>
-    <p class="lead">Click any project to expand the full case study. Everything here lives on my <a href="https://github.com/josethomas568" target="_blank" rel="noopener" style="color:var(--accent)">GitHub</a>.</p>
-    <div class="cases" id="cases">
-
-      <div class="case open">
-        <div class="case-head" role="button" tabindex="0">
-          <div>
-            <h3>🚗 Vehicle Auction Price Prediction Engine</h3>
-            <div class="sub">XGBoost residual-delta model · serverless REST API on GCP</div>
-          </div>
-          <span class="case-toggle">+</span>
-        </div>
-        <div class="case-body"><div class="case-inner">
-          <figure class="case-diagram"><svg viewBox="0 0 1208 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="architecture diagram"><defs><marker id="pf-ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8a96ab"/></marker></defs><rect x="8" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="89" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">500k+ records</text><line x1="175" y1="47" x2="207" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="214" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="295" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">89 features</text><line x1="381" y1="47" x2="413" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="420" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="501" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">y = Price − MMR</text><line x1="587" y1="47" x2="619" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="626" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="707" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">XGBoost</text><line x1="793" y1="47" x2="825" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="832" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="913" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">+ MMR back</text><line x1="999" y1="47" x2="1031" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="1038" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="1119" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Cloud Run API</text></svg><figcaption>Residual-delta modeling — predict the markup vs. market, then add MMR back. Served as a serverless API on GCP.</figcaption></figure>
-          <div class="row"><div class="k">Problem</div><div class="vv">At wholesale auctions the base valuation (Manheim Market Report) tracks the final price almost 1:1, so models lazily split on it — target leakage — and never learn how the actual vehicle traits drive the bid.</div></div>
-          <div class="row"><div class="k">Approach</div><div class="vv">Reframed the target as the markup/discount versus market (Selling Price − MMR), forcing 89 engineered features to explain price. Trained an XGBoost regressor on 500k+ records, then containerized it and shipped a serverless REST API on Google Cloud Run.</div></div>
-          <div class="row"><div class="k">Results</div>
-            <div class="metrics">
-              <div class="metric"><div class="mv">74.5%</div><div class="mk">RMSE improvement</div></div>
-              <div class="metric"><div class="mv">$1,475</div><div class="mk">final RMSE</div></div>
-              <div class="metric"><div class="mv">500k+</div><div class="mk">records</div></div>
-            </div>
-          </div>
-          <div class="tags"><span class="tag">XGBoost</span><span class="tag">Google Cloud Run</span><span class="tag">Docker</span><span class="tag">Flask</span></div>
-          <div class="case-links"><a href="https://github.com/josethomas568/Vehicle-Auction-Price-Prediction-Engine" target="_blank" rel="noopener">GitHub ↗</a></div>
-        </div></div>
-      </div>
-
-      <div class="case">
-        <div class="case-head" role="button" tabindex="0">
-          <div>
-            <h3>🤖 DS Architect — Automated Data-Science Platform</h3>
-            <div class="sub">An LLM agent that runs EDA → modeling → reporting</div>
-          </div>
-          <span class="case-toggle">+</span>
-        </div>
-        <div class="case-body"><div class="case-inner">
-          <figure class="case-diagram"><svg viewBox="0 0 1002 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="architecture diagram"><defs><marker id="pf-ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8a96ab"/></marker></defs><rect x="8" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="89" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Upload data</text><line x1="175" y1="47" x2="207" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="214" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="295" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Claude agent</text><line x1="381" y1="47" x2="413" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="420" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="501" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">EDA → Model</text><line x1="587" y1="47" x2="619" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="626" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="707" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Report → Export</text><line x1="793" y1="47" x2="825" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="832" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="913" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Streamlit UI</text></svg><figcaption>An LLM agent writes and runs Python across a guided five-phase workflow, from EDA to an exported report.</figcaption></figure>
-          <div class="row"><div class="k">Problem</div><div class="vv">Taking a raw dataset to a trained model and a shareable report means the same repetitive loop every time — EDA, cleaning, feature engineering, modeling, and write-up.</div></div>
-          <div class="row"><div class="k">Approach</div><div class="vv">Built a conversational platform (Streamlit + FastAPI) where an Anthropic Claude agent with tool use writes and executes Python against your data through a guided five-phase workflow — from EDA to a baseline → Random Forest → XGBoost comparison to an auto-generated report. Code runs in sandboxed subprocesses.</div></div>
-          <div class="row"><div class="k">Highlights</div>
-            <div class="metrics">
-              <div class="metric"><div class="mv">5-phase</div><div class="mk">agent workflow</div></div>
-              <div class="metric"><div class="mv">Tool-use</div><div class="mk">Claude executes code</div></div>
-              <div class="metric"><div class="mv">Docker</div><div class="mk">one-command deploy</div></div>
-            </div>
-          </div>
-          <div class="tags"><span class="tag">Anthropic Claude</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">XGBoost</span><span class="tag">Docker</span></div>
-          <div class="case-links"><a href="https://github.com/josethomas568/automl-analyst" target="_blank" rel="noopener">GitHub ↗</a></div>
-        </div></div>
-      </div>
-
-      <div class="case">
-        <div class="case-head" role="button" tabindex="0">
-          <div>
-            <h3>👁️ Vehicle Damage Classification (CNN)</h3>
-            <div class="sub">Transfer learning with EfficientNetB0 · 8 damage classes</div>
-          </div>
-          <span class="case-toggle">+</span>
-        </div>
-        <div class="case-body"><div class="case-inner">
-          <figure class="case-diagram"><svg viewBox="0 0 1002 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="architecture diagram"><defs><marker id="pf-ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8a96ab"/></marker></defs><rect x="8" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="89" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Salvage photos</text><line x1="175" y1="47" x2="207" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="214" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="295" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Augment</text><line x1="381" y1="47" x2="413" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="420" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="501" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">EfficientNetB0</text><line x1="587" y1="47" x2="619" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="626" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="707" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Fine-tuned head</text><line x1="793" y1="47" x2="825" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="832" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="913" y="43" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">8 classes ·</text><text x="913" y="58" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">88.7%</text></svg><figcaption>Transfer learning — a frozen ImageNet backbone plus a fine-tuned head, with augmentation for real-world robustness.</figcaption></figure>
-          <div class="row"><div class="k">Problem</div><div class="vv">Real salvage photos are noisy — unpredictable angles, poor lighting, and heavy class imbalance — so CNNs trained from scratch overfit to the background instead of the damage.</div></div>
-          <div class="row"><div class="k">Approach</div><div class="vv">Used transfer learning on a frozen EfficientNetB0 (ImageNet) with fine-tuned top layers for 8 damage classes, plus dynamic augmentation (rotation, shifting, zoom, flips). Early stopping and checkpointing captured the peak weights.</div></div>
-          <div class="row"><div class="k">Results</div>
-            <div class="metrics">
-              <div class="metric"><div class="mv">88.7%</div><div class="mk">validation accuracy</div></div>
-              <div class="metric"><div class="mv">8</div><div class="mk">damage classes</div></div>
-              <div class="metric"><div class="mv">EfficientNetB0</div><div class="mk">transfer learning</div></div>
-            </div>
-          </div>
-          <div class="tags"><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">EfficientNet</span><span class="tag">Computer Vision</span></div>
-          <div class="case-links"><a href="https://github.com/josethomas568/Salvage-Vehicle-Damage-Classification-CNN-" target="_blank" rel="noopener">GitHub ↗</a></div>
-        </div></div>
-      </div>
-
-      <div class="case">
-        <div class="case-head" role="button" tabindex="0">
-          <div>
-            <h3>⚡ Live Ride-Share Surge-Pricing Engine</h3>
-            <div class="sub">Streaming pipeline: Redpanda → PySpark → Redis</div>
-          </div>
-          <span class="case-toggle">+</span>
-        </div>
-        <div class="case-body"><div class="case-inner">
-          <figure class="case-diagram"><svg viewBox="0 0 1002 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="architecture diagram"><defs><marker id="pf-ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8a96ab"/></marker></defs><rect x="8" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="89" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Async generator</text><line x1="175" y1="47" x2="207" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="214" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="295" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Redpanda</text><line x1="381" y1="47" x2="413" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="420" y="15" width="162" height="64" rx="12" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.55)" stroke-width="1.5"/><text x="501" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">PySpark 30s win</text><line x1="587" y1="47" x2="619" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="626" y="15" width="162" height="64" rx="12" fill="rgba(52,211,153,.09)" stroke="rgba(52,211,153,.55)" stroke-width="1.5"/><text x="707" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Redis sub-ms</text><line x1="793" y1="47" x2="825" y2="47" stroke="#8a96ab" stroke-width="1.6" marker-end="url(#pf-ar)"/><rect x="832" y="15" width="162" height="64" rx="12" fill="rgba(96,165,250,.09)" stroke="rgba(96,165,250,.55)" stroke-width="1.5"/><text x="913" y="51" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12.5" fill="#dde4ef">Grafana</text></svg><figcaption>Event-time streaming with a one-minute watermark, exactly-once dedup, and sub-millisecond Redis lookups.</figcaption></figure>
-          <div class="row"><div class="k">Problem</div><div class="vv">Surge pricing needs live supply/demand per zone from a messy event firehose — late events, duplicates, and GPS dropouts — without ever crashing the pipeline.</div></div>
-          <div class="row"><div class="k">Approach</div><div class="vv">Built a four-stage streaming system: an async event generator → Redpanda (Kafka) → PySpark Structured Streaming with 30-second tumbling windows, a one-minute watermark and exactly-once dedup → Redis for sub-millisecond lookups. Prometheus + Grafana dashboards and a documented fault-tolerance recovery story round it out.</div></div>
-          <div class="row"><div class="k">Highlights</div>
-            <div class="metrics">
-              <div class="metric"><div class="mv">30s</div><div class="mk">tumbling windows</div></div>
-              <div class="metric"><div class="mv">Exactly-once</div><div class="mk">dedup + recovery</div></div>
-              <div class="metric"><div class="mv">sub-ms</div><div class="mk">Redis lookups</div></div>
-            </div>
-          </div>
-          <div class="tags"><span class="tag">PySpark</span><span class="tag">Kafka / Redpanda</span><span class="tag">Redis</span><span class="tag">Grafana</span><span class="tag">Docker</span></div>
-          <div class="case-links"><a href="https://github.com/josethomas568/Live-Ride-Share-Surge-Pricing-Engine" target="_blank" rel="noopener">GitHub ↗</a></div>
-        </div></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 
 <!-- ============ FOOTBALL ANALYTICS ============ -->
 <section id="football">
   <div class="wrap reveal">
     <div class="eyebrow">Off the clock</div>
-    <h2>&#9917; Football, by the numbers</h2>
+    <h2>Football, by the numbers</h2>
     <p class="lead">
       Outside of work, football is my obsession — I've played and followed the game for as long as I
       can remember, and I can't watch a match without thinking about the data underneath it. So here
@@ -928,12 +1003,12 @@
         <span class="tag">Monte Carlo</span><span class="tag">Zero-dependency</span><span class="tag">LLM (optional)</span>
       </div>
       <div class="wc-btns">
-        <a class="btn primary" href="wc2026/index.html" target="_blank" rel="noopener">&#9917; Launch the predictor</a>
+        <a class="btn primary" href="wc2026/index.html" target="_blank" rel="noopener">Launch the predictor</a>
         <a class="btn ghost" href="https://github.com/josethomas568/World-Cup-2026-Prediction-Engine" target="_blank" rel="noopener">View source on GitHub &#8599;</a>
       </div>
       <div class="wc-embed">
         <div class="wc-overlay" id="wcOverlay">
-          <div class="ttl">&#9917; Try the live predictor</div>
+          <div class="ttl">Try the live predictor</div>
           <div class="sub">Runs the full predictor right here, restyled to match this site. Loads instantly &mdash; everything stays in your browser.</div>
           <button class="btn primary" id="wcLaunch" style="padding:11px 22px;">Load embedded app</button>
         </div>
@@ -968,15 +1043,15 @@
       <div class="fb-row pois">
         <div>
           <div class="teaminputs">
-            <input id="teamH" value="Home" maxlength="14" />
-            <input id="teamA" value="Away" maxlength="14" />
+            <input id="teamH" value="Home" maxlength="14" aria-label="Home team name" autocomplete="off" />
+            <input id="teamA" value="Away" maxlength="14" aria-label="Away team name" autocomplete="off" />
           </div>
           <div class="fb-ctrl">
-            <label><span id="teamHL">Home</span> expected goals <span class="rv" id="lamHV">1.7</span></label>
+            <label for="lamH"><span id="teamHL">Home</span> expected goals <span class="rv" id="lamHV">1.7</span></label>
             <input type="range" id="lamH" min="2" max="35" value="17" />
           </div>
           <div class="fb-ctrl">
-            <label><span id="teamAL">Away</span> expected goals <span class="rv" id="lamAV">1.1</span></label>
+            <label for="lamA"><span id="teamAL">Away</span> expected goals <span class="rv" id="lamAV">1.1</span></label>
             <input type="range" id="lamA" min="2" max="35" value="11" />
           </div>
           <div class="score-summary">
@@ -1005,40 +1080,22 @@
 <section id="contact">
   <div class="wrap reveal">
     <div class="eyebrow">Contact</div>
-    <h2>Let's build something intelligent</h2>
-    <p class="lead">I'm open to ML/AI engineering and data science roles, as well as consulting.
-       Send me a message below, or reach out on any channel.</p>
-    <div class="contact-grid">
-      <!-- EDIT ME: create a free form at https://formspree.io and paste your endpoint in the action below -->
-      <form class="cform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div>
-          <label for="cf-name">Name</label>
-          <input id="cf-name" name="name" type="text" required autocomplete="name" />
-        </div>
-        <div>
-          <label for="cf-email">Email</label>
-          <input id="cf-email" name="email" type="email" required autocomplete="email" />
-        </div>
-        <div>
-          <label for="cf-msg">Message</label>
-          <textarea id="cf-msg" name="message" required placeholder="Say hello…"></textarea>
-        </div>
-        <button class="btn primary" type="submit">Send message →</button>
-        <p class="cform-note">Goes straight to my inbox once the form endpoint is set — no account needed to message me. Prefer email or socials? Use the links.</p>
-      </form>
-      <div class="contact-row" style="flex-direction:column;">
-        <a href="mailto:josethomas568@gmail.com">✉️ Email</a>
-        <a href="https://github.com/josethomas568" target="_blank" rel="noopener">🐙 GitHub</a>
-        <!-- EDIT ME: paste your LinkedIn profile URL -->
-        <a href="#" target="_blank" rel="noopener">💼 LinkedIn</a>
-        <!-- EDIT ME: link your résumé PDF -->
-        <a href="#" target="_blank" rel="noopener">📄 Résumé (PDF)</a>
-      </div>
+    <h2>Get in touch</h2>
+    <p class="lead">I'm open to ML/AI engineering and data science roles. Email is the fastest way to reach me.</p>
+    <div class="contact-main">
+      <a class="btn primary" href="mailto:josethomas568@gmail.com">Email me</a>
+      <a class="email" href="mailto:josethomas568@gmail.com" translate="no">josethomas568@gmail.com</a>
+    </div>
+    <div class="contact-row">
+      <a href="https://github.com/josethomas568" target="_blank" rel="noopener">GitHub &#8599;</a>
+      <!-- LINKEDIN --><!-- RESUME -->
     </div>
   </div>
 </section>
 
-<footer><div class="wrap">Designed &amp; built by Jose Thomas — the neural net above runs entirely in your browser · © <span id="year"></span></div></footer>
+</main>
+
+<footer><div class="wrap">Designed &amp; built by Jose Thomas · every demo runs in your browser · &copy; <span id="year"></span></div></footer>
 
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
@@ -1049,7 +1106,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 /* ---------- case study accordion ---------- */
 document.querySelectorAll('.case-head').forEach(h=>{
-  h.addEventListener('click',()=>h.parentElement.classList.toggle('open'));
+  h.addEventListener('click',()=>{const o=h.parentElement.classList.toggle('open');h.setAttribute('aria-expanded',o);});
 });
 
 /* ============================================================
@@ -1062,6 +1119,9 @@ document.querySelectorAll('.case-head').forEach(h=>{
     const count=Math.min(70,Math.floor(w*h/16000));
     nodes=Array.from({length:count},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}));}
   resize();window.addEventListener('resize',resize);
+  const still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let visible=true,raf=0;
+  if('IntersectionObserver' in window){new IntersectionObserver(es=>{visible=es[0].isIntersecting;if(visible&&!raf&&!still)raf=requestAnimationFrame(loop);}).observe(c);}
   c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top;});
   c.addEventListener('mouseleave',()=>{mouse.x=mouse.y=-999;});
   function loop(){
@@ -1071,10 +1131,10 @@ document.querySelectorAll('.case-head').forEach(h=>{
       if(d<120){n.x+=dx/d*1.2;n.y+=dy/d*1.2;}}
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
       const a=nodes[i],b=nodes[j],dist=Math.hypot(a.x-b.x,a.y-b.y);
-      if(dist<130){x.strokeStyle='rgba(52,211,153,'+(1-dist/130)*.4+')';x.lineWidth=1;
+      if(dist<130){x.strokeStyle='rgba(60,207,154,'+(1-dist/130)*.3+')';x.lineWidth=1;
         x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();}}
-    for(const n of nodes){x.fillStyle='rgba(96,165,250,.9)';x.beginPath();x.arc(n.x,n.y,2.2,0,7);x.fill();}
-    requestAnimationFrame(loop);
+    for(const n of nodes){x.fillStyle='rgba(169,182,200,.7)';x.beginPath();x.arc(n.x,n.y,2,0,7);x.fill();}
+    raf=(visible&&!still)?requestAnimationFrame(loop):0;
   }
   loop();
 })();
